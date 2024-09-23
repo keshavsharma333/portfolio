@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const IconLogo = (props) => {
   const { width, height } = props;
@@ -31,6 +32,11 @@ const IconLogo = (props) => {
       </g>
     </svg>
   );
+};
+
+IconLogo.propTypes = {
+  width: PropTypes.number.isRequired,
+  height: PropTypes.number.isRequired,
 };
 
 export default IconLogo;
