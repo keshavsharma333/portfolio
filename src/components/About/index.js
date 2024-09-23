@@ -43,7 +43,7 @@ const About = () => {
             <Image
               width={300}
               height={300}
-              src="/avatar.jpeg"
+              src="/IMG_4184 (2).png"
               alt="Avatar"
               className="img"
             />
