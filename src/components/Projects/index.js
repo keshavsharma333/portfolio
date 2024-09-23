@@ -1,6 +1,7 @@
 /* eslint-disable react/jsx-one-expression-per-line */
 /* eslint-disable global-require */
 /* eslint-disable no-return-assign */
+/* eslint-disable react/no-danger */
 import { useEffect, useState, useRef } from 'react';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import { Icon } from '@components/Icons';

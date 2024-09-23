@@ -20,20 +20,33 @@ const About = () => {
       <NumberedHeading>About Me</NumberedHeading>
       <div className="inner">
         <StyledText>
-        <p>An enthusiastic front-end developer with 4+ years of experience building sleek, high-performance web applications. From responsive front-end architectures to seamless user interfaces, I specialize in using modern JavaScript frameworks like React and Next with TypeScript.</p>
-
-<p>As a developer who thrives in agile teams, I collaborate effectively with product owners, developers, and designers to achieve successful implementations.</p>
-<br/>
-  <p>Here are a few technologies I’ve been working with recently:</p>
-
+          <p>
+            An enthusiastic front-end developer with 4+ years of experience
+            building sleek, high-performance web applications. From responsive
+            front-end architectures to seamless user interfaces, I specialize in
+            using modern JavaScript frameworks like React and Next with
+            TypeScript.
+          </p>
+          <p>
+            As a developer who thrives in agile teams, I collaborate effectively
+            with product owners, developers, and designers to achieve successful
+            implementations.
+          </p>
+          <br />
+          <p>Here are a few technologies I’ve been working with recently:</p>
           <ul className="skills-list">
             {skills && skills.map((skill) => <li key={skill}>{skill}</li>)}
           </ul>
         </StyledText>
-
         <StyledPic>
           <div className="wrapper">
-            <Image width={300} height={300} blu src="/avatar.jpeg" alt="Avatar" className="img" />
+            <Image
+              width={300}
+              height={300}
+              src="/avatar.jpeg"
+              alt="Avatar"
+              className="img"
+            />
           </div>
         </StyledPic>
       </div>

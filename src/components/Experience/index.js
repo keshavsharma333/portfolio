@@ -3,7 +3,12 @@ import { CSSTransition } from 'react-transition-group';
 import { NumberedHeading } from '@common/styles';
 import { srConfig } from '@config/sr';
 import { jobs } from '@config';
-import { StyledExperienceSection, StyledTabList, StyledTabContent, StyledTabButton } from './styles';
+import {
+  StyledExperienceSection,
+  StyledTabList,
+  StyledTabContent,
+  StyledTabButton,
+} from './styles';
 
 const Experience = () => {
   const [activeTabId, setActiveTabId] = useState(0);
@@ -35,10 +40,12 @@ const Experience = () => {
           <CSSTransition key={activeTabId} timeout={250} classNames="fade">
             <div>
               <h3>
-                {jobs[activeTabId].title} <span className="company">@ {jobs[activeTabId].company}</span>
+                {jobs[activeTabId].title}{' '}
+                <span className="company">@ {jobs[activeTabId].company}</span>
               </h3>
               <p className="job-details">
-                {jobs[activeTabId].range} | {jobs[activeTabId].location} | {jobs[activeTabId].type}
+                {jobs[activeTabId].range} | {jobs[activeTabId].location} |{' '}
+                {jobs[activeTabId].type}
               </p>
               <ul>
                 {jobs[activeTabId].description.map((desc, i) => (

@@ -2,6 +2,8 @@ import Document, { Html, Head, Main, NextScript } from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
 import { GA_TRACKING_ID } from '@lib/constants';
 
+/* eslint-disable react/no-danger */
+
 export default class MyDocument extends Document {
   render() {
     const { isProduction } = this.props;

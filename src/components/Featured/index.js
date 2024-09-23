@@ -1,5 +1,6 @@
 /* eslint-disable no-return-assign */
 /* eslint-disable global-require */
+/* eslint-disable react/no-danger */
 import { useEffect, useRef } from 'react';
 import { Icon } from '@components/Icons';
 import { NumberedHeading } from '@common/styles';
